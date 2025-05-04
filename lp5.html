@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackForm – Créez, Connectez, Collaborez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    header p {
+      color: #ccc;
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .buttons .primary {
+      background: white;
+      color: black;
+    }
+    .buttons .secondary {
+      border: 1px solid white;
+      color: white;
+    }
+    .buttons a:hover {
+      opacity: 0.85;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #222;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #bbb;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .newsletter {
+      background: #111;
+      margin: 4rem auto;
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 600px;
+    }
+    .newsletter h2 {
+      margin-bottom: 1rem;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.8rem;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .newsletter button {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      background: white;
+      color: black;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .newsletter button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BlackForm</h1>
+    <p>Rassemblez les talents. Lancez vos projets. Donnez vie à vos idées dans un écosystème créatif.</p>
+    <div class="buttons">
+      <a href="#" class="primary">Créer un projet</a>
+      <a href="#" class="secondary">Explorer les profils</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="card">
+      <<img src="https://images.unsplash.com/photo-1555529669-e69f664e1d10?w=800" alt="Shooting mode">
+      <h3>Lancez votre vision</h3>
+      <p>Décrivez votre idée, choisissez vos collaborateurs et transformez-la en projet réel. Chaque ambition mérite une équipe.</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\TMinta\Documents\BF\img\talents.jpg" alt="Musique numérique">
+      <h3>Connectez les talents</h3>
+      <p>Des profils variés pour tous les besoins : développeurs, stylistes, photographes, community managers… à portée de clic.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fbf65?w=800" alt="Développement UX">
+
+      <h3>Créez autrement</h3>
+      <p>BlackForm est un incubateur d’idées : un espace où les projets se construisent en équipe, de manière fluide et intuitive.</p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Inscrivez-vous à la bêta privée</h2>
+    <p>Recevez une invitation exclusive pour tester BlackForm en avant-première.</p>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Votre adresse e-mail" required />
+      <button type="submit">Rejoindre la bêta</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 BlackForm · Made for creators, by creators
+  </footer>
+
+</body>
+</html>
