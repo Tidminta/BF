@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BF  – Créez, Connectez, Collaborez</title>
+  <title>BF Projetct – Créez, Connectez, Collaborez</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -121,41 +121,192 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    #logo {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-container {
+  display: flex;
+    flex-direction: row; /* Changement ici */
+    gap: 15px;
+    max-width: 500px; /* Largeur augmentée */
+    margin: 30px auto; /* Marge augmentée */
+    justify-content: center; /* Centrage horizontal */
+    flex-wrap: wrap; /* Permet le passage en colonne sur mobile */
+}
+
+.cta-button {
+  padding: 12px 20px; /* Padding ajusté */
+    min-width: 200px; /* Largeur minimale pour conserver la lisibilité */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.newsletter-btn {
+    background-color: white;
+    color: black;
+}
+
+.beta-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:active {
+    transform: translateY(1px); /* Effet "pressé" */
+}
+
+@media (max-width: 500px) {
+    .cta-container {
+        flex-direction: column;
+    }
+    .cta-button {
+        width: 100%;
+    }
+
+    .tagline {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 25px;
+    position: relative;
+    color: #f8f8f8;
+    letter-spacing: 0.5px;
+}
+
+.tagline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: white;
+}
+
+.tagline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: white;
+}
+
+/* Animation subtile au survol */
+.tagline:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+}
+
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>BF</h1>
-    <p>Rassemblez les talents. Lancez vos projets. Donnez vie à vos idées dans un écosystème créatif.</p>
-    <div class="buttons">
-      <a href="#" class="primary">Créer un projet</a>
-      <a href="#" class="secondary">Explorer les profils</a>
+    <div id="logo">BLACKFORM</div>
+    <p class="tagline">
+      <span style="font-weight: 700;">Talents. Projets. écosystème.</span><br>
+      <!-- <span style="font-style: italic;">Lancez vos projets.</span><br> --> 
+      <!-- <span style="font-style: italic;">Au sein d'un écosystème créatif unique.</span> -->
+  </p>
+    
+    <div class="cta-container">
+    <!-- <p>Notre application mobile arrive bientôt ! Inscrivez-vous à la liste d'attente pour être averti dès son lancement.</p> 
+<button class="cta-button newsletter-btn">✉️ Je m'inscris à la newsletter</button>
+<button class="cta-button beta-btn">🚀 Je veux tester la version Beta !</button>
     </div>
+  -->
+
+  <!--
+    <h1>BLACKFORM</h1>
+    <p>
+      Réunissez les talents. Lancez vos projets. Donnez vie à vos idées au sein d’un écosystème créatif unique.
+    </p>
+    <p>
+      Notre application mobile arrive bientôt ! Inscrivez-vous à la liste d’attente pour être averti dès son lancement.
+      Vous pouvez aussi rejoindre notre communauté de testeurs et découvrir la version bêta en avant-première.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="primary">Je m'inscris à la newsletter</a>
+     <a href="#" class="secondary">Je veux tester la version Beta !</a>
+    </div>
+  -->
   </header>
 
   <section class="section">
     <div class="card">
-      <!-- <h3>Lancez votre vision</h3> -->
-      <img src="https://raw.githubusercontent.com/Tidminta/BF/main/resources/vision.png" alt="Shooting mode">
-      <!-- <p>Décrivez votre idée, choisissez vos collaborateurs et transformez-la en projet réel. Chaque ambition mérite une équipe.</p> -->
+      <h3>Lancez votre vision</h3>
+      <p>Décrivez votre idée, choisissez vos collaborateurs et transformez-la en projet réel. Chaque ambition mérite une équipe.</p>
+      <br>
+      <img src="https://raw.githubusercontent.com/Tidminta/BF/main/resources/img4.jpeg" alt="Image 10">
+      </br>
+
     </div>
     <div class="card">
-      <img src="C:\Users\TMinta\Documents\BF\img\talents.jpg" alt="Musique numérique">
       <h3>Connectez les talents</h3>
       <p>Des profils variés pour tous les besoins : développeurs, stylistes, photographes, community managers… à portée de clic.</p>
+      <br>
+      <img src="https://raw.githubusercontent.com/Tidminta/BF/main/resources/img10.jpeg" alt="Image 11">
+    </br>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fbf65?w=800" alt="Développement UX">
 
       <h3>Créez autrement</h3>
-      <p>B F  est un incubateur d’idées : un espace où les projets se construisent en équipe, de manière fluide et intuitive.</p>
+      <p>La BlackForm est un incubateur d’idées : un espace où les projets se construisent en équipe, de manière fluide et intuitive.</p>
+      <br>
+      <img src="https://raw.githubusercontent.com/Tidminta/BF/main/resources/img11.jpeg" alt="Image 11">
+    </br>
     </div>
   </section>
 
   <section class="newsletter">
     <h2>Inscrivez-vous à la bêta privée</h2>
-    <p>Recevez une invitation exclusive pour tester B F  en avant-première.</p>
+    <p>Recevez une invitation exclusive pour tester la BlackForm en avant-première.</p>
     <form action="#" method="POST">
       <input type="email" name="email" placeholder="Votre adresse e-mail" required />
       <button type="submit">Rejoindre la bêta</button>
@@ -168,3 +319,8 @@
 
 </body>
 </html>
+
+
+
+
+
